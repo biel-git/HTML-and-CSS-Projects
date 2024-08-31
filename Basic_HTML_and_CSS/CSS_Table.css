@@ -1,0 +1,26 @@
+h1 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+table {
+	border: 1px solid black;
+}
+
+td:hover {
+	background-color: gold;
+	color: black;
+}
+
+th:h {
+	text-decoration: italic;
+}
+tr, th {
+	background-color: black:
+	color: cornsilk;
+}
+
+tr, td {
+	background-color: green;
+	color: white;
+}
