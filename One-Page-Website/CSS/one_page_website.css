@@ -1,0 +1,203 @@
+html {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #000000; 
+                                    /* COLOUR OF THE MENU */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px rgb(255, 255, 255);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff0303;
+}
+
+/* Keep logos next to their text*/
+nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+/* Background image for my Home page*/
+#home {
+    background: url('/images/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0px; 
+    /* padding-top helps to maintain the main title */
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust opacity by changing the last value (0.5) */
+    z-index: -1;
+}
+
+
+/* This is to design the main text on the Home page */
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);  
+    font-size: 90px; 
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px black; /* Adds a thin black outline around the text */
+}
+
+
+/* THESE ARE MY BORDERS BETWEEN SECTIONS*/
+ #saopaulo, #corinthians, #more, #contact {
+    
+    margin-bottom: 50px;
+    padding: 50px 0;
+    border-top: 100px solid #000000; 
+}
+
+#home {
+    border-bottom: 3px solid #000000; 
+}
+
+
+/* Section layout this is really important for the whole web page layout*/
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Resize gallery images */
+section img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+
+/* Hover effect for images*/
+section img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Text styling*/
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7);
+    text-decoration:double;
+    font-size: 40px;
+    color:#000000
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* CONTACT US FORM */
+#contact form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+    background-color: #16ff25;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold; /* Makes my text bold */
+    padding: 12px 20px; /* Optionally increase the padding for a larger button */
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #054508;
+}
+
+/* Footer styling */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+
+/* Video section iframe styling */
+#more iframe {
+    margin: 20px;
+}
