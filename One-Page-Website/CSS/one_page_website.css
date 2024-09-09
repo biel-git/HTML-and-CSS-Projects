@@ -60,7 +60,7 @@ nav img {
 
 /* Background image for my Home page*/
 #home {
-    background: url('/images/background.jpg') no-repeat center center/cover;
+    background: url('/background.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -90,7 +90,8 @@ h1 {
     font-family:'Times New Roman', Times, serif;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);  
     font-size: 90px; 
-    font-style: italic;
+    font-style:italic;
+    text-transform: capitalize;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 2px black; /* Adds a thin black outline around the text */
 }
