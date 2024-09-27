@@ -5,6 +5,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./css/one_page_website.css">
 		<link rel="icon" href="./images/favicon.ico" image/x-icon">
+		<script src="JS/one_page_website.js"></script>
     	<title>PAL | SAO | COR</title>
 	</head>
 	<body>
@@ -24,7 +25,7 @@
 
     <!-- Home Section -->
     <section id="home">
-        <h1><center>WHO ARE THE 3 BIGGEST RIVALS
+        <h1><center>WHO ARE THE 3 BIGGEST CLUBS
 				<br>	IN SAO PAULO STATE? 
 				<br>	&#128270; &#9917;</center></h1>
        
@@ -86,6 +87,54 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dMPFLeCXy7s?si=RHmp_mtxS_NDUkyq&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
+
+	<!--UPDATE WITH LIGHTBOX-->
+	<div class="thumbnail-row">
+		<div class="thumbnail-column">
+			<img src="/s2thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="São Paulo FC Stadium" width="200" height="150">
+		</div>
+		<div class="thumbnail-column">
+			<img src="/p2thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Palmeiras Stadium" width="200" height="150">
+		</div>
+		<div class="thumbnail-column">
+			<img src="/p3thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Palmeiras Trophies" width="200" height="150">
+		</div>
+		<div class="thumbnail-column">
+			<img src="s3thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="São Paulo FC Team" width="200" height="150">
+		</div>
+	</div>
+	  
+		<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+		<div class="mySlides">
+			<div class="numbertext">1 / 4</div>
+			<img src="/images/s2.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">2 / 4</div>
+			<img src="/images/p2.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">3 / 4</div>
+			<img src="/images/p3.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<div class="numbertext">4 / 4</div>
+			<img src="/images/s3.jpg" style="width:100%">
+		</div>
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<!-- Caption text -->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+		</div>
+	</div>
+	  
+		 
     <!-- Contact Form Section -->
     <section id="contact">
         <h3>WOULD YOU LIKE UPDATES?
