@@ -1,0 +1,207 @@
+    /* NAV BAR STYLE */
+    body {margin:0;}
+
+    .navbar {
+        overflow: hidden;
+        background-color: #000000;
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+      }
+      
+      /* Links inside the navbar */
+      .navbar a {
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: fantasy;
+        font-size: large;
+      }
+      
+      /* Change background on mouse-over */
+      .navbar a:hover {
+        background: #ff0000;
+        color: black;
+        font-weight: bold;
+      }
+      
+      /* Main content */
+      .main {
+        margin-top: 30px; 
+      }
+    
+    
+    
+    
+    
+    
+    /* IMG STYLING */    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        filter: grayscale(100%);
+        border: 2px solid black;
+        border-radius: 25px;
+    }
+
+    /* THE FOLLOWING WILL GIVE THE PHOTO OVERLAY EFFECT (Challenge 5-8) */
+
+    .container {
+        position: relative;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+      }
+      
+      .img {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .container:hover .image {
+        opacity: 0.3;
+      }
+      
+      .container:hover .middle {
+        opacity: 1;
+      }
+      
+      .text {
+        background-color: #000000;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+
+    /* THE FOLLOWING IS TO PLACE TEXT INSIDE IMAGES (CHALLENGE 5-4) */
+
+    .centered {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(208, 255, 0);
+        font-weight: bold;
+        font-size: 30px;    
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    }
+
+    /* TABLE STYLING */
+    .table-container {
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+    }
+
+    table, th, td {
+    border: 2px solid;
+    border-color: black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    }
+
+    thead, th {
+    background-color: gold;
+    }
+    /* END TABLE STYLING */
+
+    /* COLUMN STYLING */
+
+    h2, p {
+    text-align:center;
+    }
+
+    a:hover {
+        font-size: large;
+        background-color: gold;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        height:500px;
+        color:#000000;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* VIDEO STYLING */
+
+      .video-container {
+        position: relative;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+      }
+      
+      .video {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .video-container:hover .video {
+        opacity: 0.3;  
+      }
+      
+      .video-container:hover .middle {
+        opacity: 1; 
+      }
+      
+      .text {
+        background-color: #1e00ff76;
+        color: white;
+        font-size: 29px;
+        padding: 16px 32px;
+      }
+      
+
+
+    footer {
+    text-align: center;
+    font-weight:bold;
+    }
